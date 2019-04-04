@@ -1,0 +1,130 @@
+.suspicion{
+	padding-top: 71px;
+	padding-bottom: 80px;
+	background: url(../img/bg-section.jpg) no-repeat center;
+	background-color: #fff3e6;
+	&-content{
+		margin-top: 50px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&-box{
+		width: 25%;
+	}
+	&-img{
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: -10px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 42px;
+			height: 42px;
+			
+border-radius: 50%;
+background: url(../img/icon-exclamatory.svg) no-repeat 48% 50%;
+background-color: #eb562e;
+		}
+	}
+	&-text{
+		margin-top: 27px;
+		color: #444444;
+font-size: 20px;
+font-weight: 400;
+line-height: 28px;
+text-align: center;
+	}
+	.susb{
+		margin-top: 30px;
+		.suspicion-img:before{
+			top: auto;
+			bottom: -6px;
+		}
+	}
+	.thesis-box{
+		max-width: 965px;
+		margin-top: 47px;
+	}
+}
+@include r(1189) {
+	.suspicion{
+		padding: 60px 0;
+	}
+	.suspicion-content{
+		margin-top: 35px;
+	}
+	.suspicion-img{
+		width: 220px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.suspicion-text{
+		margin-top: 15px;
+		font-size: 18px;
+		line-height: normal;
+	}
+	.suspicion .thesis-box{
+		margin-top: 30px;
+	}
+}
+@include r(1023) {
+	.suspicion{
+		background-size: cover;
+	}
+	.suspicion-content{
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 30px;
+	}
+	.suspicion-box{
+		width: 250px;
+	}
+	.suspicion .susb{
+		margin-top: 0;
+	}
+	.suspicion-text {
+    margin-top: 5px;
+		font-size: 17px;}
+		.suspicion-box{
+			margin-bottom: 25px;
+		}
+		.suspicion .susb .suspicion-img:before{
+			bottom: auto;
+			top: -10px;
+		}
+		.suspicion .thesis-box {
+			margin-top: 5px;
+	}
+}
+@include r(767) {
+	.suspicion-box {
+    width: 230px;
+}
+.suspicion-content{
+	margin-top: 20px;
+}
+.suspicion-text{
+	font-size: 16px;
+	margin-top: 0;
+	br{
+		display: none;
+	}
+}
+	.suspicion .thesis-box {
+    margin-top: 0px;
+}
+
+.suspicion-img {
+	width: 200px;}
+}
+@include r(479){
+	.suspicion-box {
+		width: 100%;
+		max-width: 270px;
+}
+.suspicion .thesis-box {
+	margin-top: 0px;
+}
+}
