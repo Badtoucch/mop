@@ -2,7 +2,8 @@
 	padding-top: 65px
 	padding-bottom: 60px
 	position: relative
-	background-color: #eef3f6
+	// background-color: #eef3f6
+	background: url('../img/bg-gives.png') no-repeat calc(50% - -425px) 100px,  #eef3f6 url('../img/bg-gives-2.png') no-repeat calc(50% - -20px) 1208px
 	.bottom__el
 		fill: #edf3f6
 	.arrow
@@ -11,36 +12,38 @@
 		transform: translate(-50%, 100%)
 		z-index: 10
 	&__title
-		margin-bottom: 50px
+		margin-bottom: 69px
 	&__content
 		display: flex
+		margin-bottom: 48px
 	.left
 		&__row
 			display: flex
-			counter-reset: section
 			counter-reset: section2 2
 			position: relative
 			&:nth-of-type(1)
-				padding-bottom: 22px
-				margin-bottom: 32px
+				counter-reset: section
 				&:after
 					content: ''
 					display: block
 					position: absolute
+					right: 0
+					left: 0
 					bottom: 0
-					height: 3px
-					width: 100%
-					background-size: 10px 18px,100% 21px
-					background-image: linear-gradient(90deg, transparent, transparent 70%, #f57373 50%, #f57373 50%)
+					width: 92%
+					height: 11px
+					background-size: 13px 11px
+					background-repeat: repeat-x
+					background-image: radial-gradient(#f57373 28%,transparent 0)
 				.item
-					padding-right: 40px
 					position: relative
+					padding-bottom: 34px
 					&::before
 						counter-increment: section
 						content: counter(section)
 						position: absolute
 						left: 0
-						top: 0
+						top: 8px
 						width: 50px
 						height: 50px
 						background-color: #f57373
@@ -53,12 +56,13 @@
 						font-weight: 700
 			&:nth-of-type(2)
 				.item
+					padding-top: 22px
 					&::before
 						counter-increment: section2
 						content: counter(section2)
 						position: absolute
 						left: 0
-						top: 0
+						top: 33px
 						width: 50px
 						height: 50px
 						background-color: #f57373
@@ -75,25 +79,28 @@
 			&:nth-of-type(1)
 				max-width: 390px
 				width: 100%
-				// &:after
-				// 	content: ''
-				// 	display: block
-				// 	position: absolute
-				// 	left: 0
-				// 	top: 0
-				// 	bottom: 0
-				// 	width: 100%
-				// 	height: 100%
-				// 	background-size: 10px 18px,100% 21px
-				// 	background-image: linear-gradient(90deg, transparent, transparent 70%, #f57373 50%, #f57373 50%)
+				padding-right: 40px
+				&:after
+					content: ''
+					display: block
+					position: absolute
+					right: 2px
+					top: 0
+					bottom: 0
+					width: 11px
+					height: 100%
+					background-size: 13px 11px
+					background-repeat: repeat-y
+					background-image: radial-gradient(#f57373 28%,transparent 0)
 			&:nth-of-type(2)
-				max-width: 420px
+				max-width: 470px
 				width: 100%
+				margin-left: 20px
 			.ttl-wrap
 				display: flex
 				align-items: center
-				margin-bottom: 20px
-				min-height: 52px
+				margin-bottom: 14px
+				min-height: 60px
 				img
 					margin-right: 20px
 			&__ttl
@@ -106,13 +113,132 @@
 				font-size: 18px
 				font-weight: 400
 				line-height: 22px
-				margin-bottom: 20px
-			&__time
-				color: #696f92
-				font-size: 18px
-				font-style: italic
-				line-height: 22px
-				padding: 9px
-				border-radius: 18px
-				display: inline-block
-				background-color: #ffffff
+				margin-bottom: 17px
+	.time
+		color: #696f92
+		font-size: 18px
+		font-style: italic
+		line-height: 22px
+		padding: 9px
+		border-radius: 18px
+		display: inline-block
+		background-color: #ffffff
+	.right
+		&__img
+			border-radius: 50%
+			border: 16px solid #f57373
+			margin-top: 55px
+			max-width: 100%
+	&__result1
+		max-width: 352px
+		margin: auto
+		font-size: 34px
+		color: #3c3f52
+		position: relative
+		padding-left: 69px
+		margin-bottom: 73px
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			width: 50px
+			height: 50px
+			background: url('../img/ico-check.png') no-repeat center #f57373
+			border-radius: 50%
+			display: flex
+			align-items: center
+			justify-content: center
+		.color
+			color: #f57373
+			b
+				color: #f57373
+				font-weight: 900
+		.small
+			display: block
+			font-size: 24px
+	.color-green
+		color: #a0d344
+.gives
+	&__ttl
+		margin-bottom: 35px
+	.list
+		display: flex
+		justify-content: space-between
+		counter-reset: section
+		margin-bottom: 54px
+		.time
+			margin-bottom: 16px
+		&__item
+			max-width: 272px
+			width: 100%
+			text-align: center
+			&:nth-of-type(even)
+				margin-top: 40px
+		.photo-wrap
+			margin-bottom: 20px
+			position: relative
+			&::after
+				counter-increment: section
+				content: counter(section)
+				position: absolute
+				width: 50px
+				height: 50px
+				background-color: #a0d344
+				border-radius: 50%
+				display: flex
+				align-items: center
+				justify-content: center
+				color: #ffffff
+				font-size: 30px
+				font-weight: 900
+				left: 50%
+				bottom: -10px
+				transform: translateX(-50%)
+			.photo
+				border: 6px solid white
+				border-radius: 50%
+		&__ttl
+			color: #3c3f52
+			font-size: 20px
+			font-weight: 700
+			line-height: 22px
+			margin-bottom: 14px
+		&__text
+			color: #3c3f52
+			font-size: 18px
+			line-height: 22px
+			b
+				color: #3c3f52
+				font-weight: 500
+	&__result2
+		max-width: 392px
+		margin: auto
+		font-size: 34px
+		color: #3c3f52
+		position: relative
+		padding-left: 69px
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			width: 50px
+			height: 50px
+			background: url('../img/ico-check-2.png') no-repeat center #a0d344
+			border-radius: 50%
+			display: flex
+			align-items: center
+			justify-content: center
+		.color
+			color: #a0d344
+			b
+				color: #a0d344
+				font-weight: 900
+		.small
+			display: block
+			font-size: 24px
+
+		
