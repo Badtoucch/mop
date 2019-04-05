@@ -1,10 +1,24 @@
 .gives
-	padding-top: 65px
+	padding-top: 140px
 	padding-bottom: 60px
 	position: relative
 	background: url('../img/bg-gives.png') no-repeat calc(50% - -425px) 100px,  #eef3f6 url('../img/bg-gives-2.png') no-repeat calc(50% - -20px) 1208px
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translate(-93%)
+		height: 61px
+		width: 775px
+		background: url(../img/gives-arrow.svg) no-repeat center
+		+r(1189)
+			transform: translate(-88%)
+			+r(1023)
+				display: none
 	+r(1189)
 		background: url('../img/bg-gives.png') no-repeat calc(50% - -425px) 100px,  #eef3f6 url('../img/bg-gives-2.png') no-repeat calc(50% - -44px) 1268px
+		padding-top: 110px
 	+r(1023)
 		background: #eef3f6 url('../img/bg-gives.png') no-repeat calc(50% - -15px) 90px
 	+r(639)
