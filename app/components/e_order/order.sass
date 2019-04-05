@@ -1,6 +1,9 @@
 .order
 	padding-top: 70px
 	padding-bottom: 77px
+	background: url('../img/bg-order.png') no-repeat center bottom, #eef3f6 url('../img/child.png') no-repeat calc(50% - -280px) -10px
+	.order-wrap
+		position: relative
 	.color-green
 		color: #a0d344
 	&__title
@@ -10,8 +13,8 @@
 		text-align: left
 		max-width: 640px
 		width: 100%
-		padding-bottom: 20px
-		margin-bottom: 48px
+		padding-bottom: 36px
+		margin-bottom: 40px
 		position: relative
 		&::after
 			content: ''
@@ -33,3 +36,7 @@
 		font-style: italic
 		span
 			color: #3c3f52
+	&__btn
+		position: absolute
+		top: 420px
+		right: 20px

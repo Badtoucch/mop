@@ -2,8 +2,13 @@
 	padding-top: 65px
 	padding-bottom: 60px
 	position: relative
-	// background-color: #eef3f6
 	background: url('../img/bg-gives.png') no-repeat calc(50% - -425px) 100px,  #eef3f6 url('../img/bg-gives-2.png') no-repeat calc(50% - -20px) 1208px
+	+r(1189)
+		background: url('../img/bg-gives.png') no-repeat calc(50% - -425px) 100px,  #eef3f6 url('../img/bg-gives-2.png') no-repeat calc(50% - -44px) 1268px
+	+r(1023)
+		background: #eef3f6 url('../img/bg-gives.png') no-repeat calc(50% - -15px) 90px
+	+r(639)
+		background: #eef3f6
 	.bottom__el
 		fill: #edf3f6
 	.arrow
@@ -11,16 +16,26 @@
 		top: auto
 		transform: translate(-50%, 100%)
 		z-index: 10
+		+r(1023)
+			display: none
 	&__title
 		margin-bottom: 69px
+		+r(1023)
+			margin-bottom: 20px
 	&__content
 		display: flex
 		margin-bottom: 48px
+		+r(1023)
+			flex-direction: column-reverse
+		+r(767)
+			margin-bottom: 30px
 	.left
 		&__row
 			display: flex
 			counter-reset: section2 2
 			position: relative
+			+r(639)
+				flex-direction: column
 			&:nth-of-type(1)
 				counter-reset: section
 				&:after
@@ -35,9 +50,31 @@
 					background-size: 13px 11px
 					background-repeat: repeat-x
 					background-image: radial-gradient(#f57373 28%,transparent 0)
+					+r(1023)
+						width: 99%
+					+r(639)
+						display: none
 				.item
 					position: relative
 					padding-bottom: 34px
+					+r(639)
+						padding-bottom: 0
+						&:last-of-type
+							padding-bottom: 30px
+							margin-bottom: 20px
+							&:after
+								content: ''
+								display: block
+								position: absolute
+								right: 0
+								left: 0
+								top: auto
+								bottom: 0
+								width: 99%
+								height: 11px
+								background-size: 13px 11px
+								background-repeat: repeat-x
+								background-image: radial-gradient(#f57373 28%,transparent 0)
 					&::before
 						counter-increment: section
 						content: counter(section)
@@ -53,10 +90,16 @@
 						display: flex
 						align-items: center
 						justify-content: center
-						font-weight: 700
+						font-weight: 900
+						+r(767)
+							width: 40px
+							height: 40px
+							font-size: 25px
 			&:nth-of-type(2)
 				.item
 					padding-top: 22px
+					+r(639)
+						padding-top: 0
 					&::before
 						counter-increment: section2
 						content: counter(section2)
@@ -72,14 +115,42 @@
 						display: flex
 						align-items: center
 						justify-content: center
-						font-weight: 700
+						font-weight: 900
+						+r(767)
+							width: 40px
+							height: 40px
+							font-size: 25px
+						+r(639)
+							top: 8px
 		.item
 			position: relative
 			padding-left: 70px
+			+r(767)
+				padding-left: 50px
 			&:nth-of-type(1)
 				max-width: 390px
 				width: 100%
 				padding-right: 40px
+				+r(1189)
+					max-width: 338px
+				+r(639)
+					max-width: 100%
+					padding-right: 0
+					margin-bottom: 20px
+					padding-bottom: 30px
+					&:after
+						content: ''
+						display: block
+						position: absolute
+						right: 0
+						left: 0
+						top: auto
+						bottom: 0
+						width: 99%
+						height: 11px
+						background-size: 13px 11px
+						background-repeat: repeat-x
+						background-image: radial-gradient(#f57373 28%,transparent 0)
 				&:after
 					content: ''
 					display: block
@@ -92,10 +163,19 @@
 					background-size: 13px 11px
 					background-repeat: repeat-y
 					background-image: radial-gradient(#f57373 28%,transparent 0)
+					+r(1023)
+						display: none
 			&:nth-of-type(2)
 				max-width: 470px
 				width: 100%
 				margin-left: 20px
+				+r(1189)
+					max-width: 544px
+				+r(767)
+					margin-left: 7px
+				+r(639)
+					max-width: 100%
+					margin-left: 0
 			.ttl-wrap
 				display: flex
 				align-items: center
@@ -103,17 +183,28 @@
 				min-height: 60px
 				img
 					margin-right: 20px
+					+r(1023)
+						margin-right: 10px
 			&__ttl
 				color: #3c3f52
 				font-size: 24px
 				font-weight: 700
 				line-height: 26px
+				+r(767)
+					font-size: 21px
+					line-height: 21px
 			&__text
 				color: #3c3f52
 				font-size: 18px
 				font-weight: 400
 				line-height: 22px
 				margin-bottom: 17px
+				+r(767)
+					line-height: 20px
+					font-size: 16px
+				+r(639)
+					br
+						display: none
 	.time
 		color: #696f92
 		font-size: 18px
@@ -124,11 +215,17 @@
 		display: inline-block
 		background-color: #ffffff
 	.right
+		text-align: center
+		margin-bottom: 20px
 		&__img
 			border-radius: 50%
 			border: 16px solid #f57373
 			margin-top: 55px
 			max-width: 100%
+			+r(1023)
+				margin-top: 0
+				width: 250px
+				border: 10px solid #f57373
 	&__result1
 		max-width: 352px
 		margin: auto
@@ -137,6 +234,11 @@
 		position: relative
 		padding-left: 69px
 		margin-bottom: 73px
+		+r(1023)
+			margin-bottom: 43px
+			font-size: 28px
+			padding-left: 50px
+			max-width: 292px
 		&::before
 			content: ''
 			position: absolute
@@ -150,6 +252,10 @@
 			display: flex
 			align-items: center
 			justify-content: center
+			+r(1023)
+				width: 40px
+				height: 40px
+				background-size: 60%
 		.color
 			color: #f57373
 			b
@@ -158,24 +264,75 @@
 		.small
 			display: block
 			font-size: 24px
+			+r(1023)
+				font-size: 20px
 	.color-green
 		color: #a0d344
 .gives
 	&__ttl
 		margin-bottom: 35px
+		+r(1023)
+			br
+				display: none
 	.list
 		display: flex
 		justify-content: space-between
 		counter-reset: section
 		margin-bottom: 54px
+		+r(1023)
+			flex-wrap: wrap
+			justify-content: center
+		+r(767)
+			margin-bottom: 30px
 		.time
 			margin-bottom: 16px
+			+r(1023)
+				margin-bottom: 10px
 		&__item
 			max-width: 272px
 			width: 100%
 			text-align: center
+			position: relative
 			&:nth-of-type(even)
 				margin-top: 40px
+				+r(1023)
+					margin-top: 0
+			&:not(:last-of-type)
+				&:nth-of-type(odd)
+					&::before
+						content: ''
+						display: block
+						position: absolute
+						top: 105px
+						right: -119px
+						width: 198px
+						height: 35px
+						background: url('../img/before-img.svg') no-repear center top
+						background-size: cover
+						z-index: 0
+				&:nth-of-type(even)
+					&::before
+						content: ''
+						display: block
+						position: absolute
+						top: 78px
+						right: -90px
+						width: 198px
+						height: 35px
+						background: url('../img/before-img.svg') no-repear center top
+						transform: rotate(180deg)
+						background-size: cover
+						z-index: 0
+			+r(1023)
+				&:nth-of-type(-n+2)
+					margin-bottom: 30px
+				&:not(:last-of-type)
+					&:nth-of-type(odd), &:nth-of-type(even)
+						&::before
+							display: none
+			+r(639)
+				&:nth-of-type(-n+3)
+					margin-bottom: 30px
 		.photo-wrap
 			margin-bottom: 20px
 			position: relative
@@ -205,6 +362,10 @@
 			font-weight: 700
 			line-height: 22px
 			margin-bottom: 14px
+			+r(1023)
+				font-size: 18px
+				line-height: 22px
+				margin-bottom: 10px
 		&__text
 			color: #3c3f52
 			font-size: 18px
@@ -212,6 +373,9 @@
 			b
 				color: #3c3f52
 				font-weight: 500
+			+r(1023)
+				font-size: 17px
+				line-height: 20px
 	&__result2
 		max-width: 392px
 		margin: auto
@@ -219,6 +383,12 @@
 		color: #3c3f52
 		position: relative
 		padding-left: 69px
+		+r(1023)
+			font-size: 28px
+			padding-left: 50px
+			max-width: 322px
+		+r(639)
+			font-size: 26px
 		&::before
 			content: ''
 			position: absolute
@@ -232,6 +402,10 @@
 			display: flex
 			align-items: center
 			justify-content: center
+			+r(1023)
+				width: 40px
+				height: 40px
+				background-size: 60%
 		.color
 			color: #a0d344
 			b
@@ -240,5 +414,5 @@
 		.small
 			display: block
 			font-size: 24px
-
-		
+			+r(1023)
+				font-size: 20px
