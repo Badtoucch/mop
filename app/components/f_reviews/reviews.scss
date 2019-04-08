@@ -537,12 +537,18 @@
 	.mCSB_inside>.mCSB_container {
 		margin-right: 30px;
 	}
+	.review-box__img {
+    margin-right: 20px;
+}
+.review-content{
+	height: 487px;
+}
 }
 
 @media screen and (max-width: 639px) {
 	.review {
 		&-content {
-			height: 410px;
+			height: 467px;
 		}
 
 		&-scroll {
@@ -685,4 +691,15 @@
 	}
 
 
+}
+@media (max-width: 479px){
+	.review-reviews {
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 12px;
+}
+.review-content {
+	height: 535px;
+}
 }
