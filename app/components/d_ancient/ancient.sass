@@ -4,6 +4,9 @@
 	background: url('../img/bg-ancient.png') no-repeat calc(50% - +398px) 106px
 	.color-green
 		color: #a0d344
+	.arrow
+		+r(1023)
+			display: none
 	&__content
 		display: flex
 		justify-content: space-between
@@ -12,11 +15,19 @@
 		margin-top: 190px
 		margin-left: -100px
 		margin-right: 69px
+		+r(1189)
+			margin-right: 40px
+			margin-top: 140px
+		+r(1023)
+			display: none
 	&__title
 		text-align: left
 		position: relative
 		padding-bottom: 40px
 		margin-bottom: 15px
+		+r(1023)
+			text-align: center
+			padding-bottom: 18px
 		&::after
 			content: ''
 			display: block
@@ -26,6 +37,9 @@
 			width: 100px
 			height: 4px
 			background-color: #a0d344
+			+r(1023)
+				left: 50%
+				transform: translateX(-50%)
 	&__desc
 		color: #696f92
 		font-size: 24px
@@ -33,23 +47,47 @@
 		margin-bottom: 33px
 		.color-green
 			font-weight: 700
+		+r(1023)
+			text-align: center
+		+r(767)
+			font-size: 21px
+			line-height: 26px
+			margin-bottom: 18px
 	&__ttl
 		color: #3c3f52
 		font-size: 36px
 		font-weight: 900
 		line-height: 44px
 		margin-bottom: 30px
+		+r(1189)
+			font-size: 28px
+		+r(1023)
+			text-align: center
 	&__list
 		display: flex
 		counter-reset: section
 		margin-bottom: 60px
 		justify-content: center
+		+r(1189)
+			justify-content: flex-start
+		+r(1023)
+			justify-content: center
+		+r(639)
+			flex-wrap: wrap
 		.item
 			flex-shrink: 0
 			position: relative
 			z-index: 20
+			+r(1189)
+				width: 120px
 			&:not(:last-of-type)
 				margin-right: 70px
+				+r(1189)
+					margin-right: 31px
+				+r(1023)
+					margin-right: 50px
+				+r(767)
+					margin-right: 40px
 				&:nth-of-type(odd)
 					&::after
 						content: ''
@@ -75,6 +113,11 @@
 						transform: rotate(180deg)
 						background-size: cover
 						z-index: -1
+			+r(767)
+				&:not(:last-of-type)
+					&:nth-of-type(odd), &:nth-of-type(even)
+						&::after
+							display: none
 			&::before
 				counter-increment: section
 				content: counter(section)
@@ -96,17 +139,26 @@
 	&__adv
 		counter-reset: section
 		margin-left: 15px
+		+r(1189)
+			margin-left: 0
 		.item
 			position: relative
 			padding-left: 50px
 			color: #696f92
 			font-size: 20px
 			line-height: 24px
+			+r(767)
+				font-size: 19px
+			+r(639)
+				br
+					display: none
 			b
 				color: #3c3f52
 				font-weight: 700
 			&:not(:last-of-type)
 				margin-bottom: 35px
+				+r(767)
+					margin-bottom: 19px
 			&::after
 				counter-increment: section
 				content: counter(section)
