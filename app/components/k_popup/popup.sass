@@ -3,6 +3,20 @@
 	background: rgba(255, 255, 255, 0.8) !important
 	&__close
 		display: none !important
+		+r(991)
+			display: block !important
+			right: 10px !important
+			top: 10px !important
+			&::after, &::before
+				background: #ef5b4d !important
+				height: 3px !important
+				width: 23px !important
+				top: 50% !important
+				transform-origin: 0 100% !important
+			&::after
+				transform: rotate(-45deg) translate(-50%, 50%) !important
+			&::before
+				transform: rotate(45deg) translate(-50%, 50%) !important
 	&__inner
 		padding-top: 0 !important
 	&__body
@@ -12,16 +26,15 @@
 	width: 750px
 	height: 497px
 	+r(991)
-		width: 300px !important
-		height: 640px
+		width: auto
+		height: auto
+		border-radius: 30px
 	&__wrap
-		// padding: 0 48px
 		display: flex
 		justify-content: space-between
 		align-items: flex-end
 		height: 100%
 		+r(991)
-			padding: 70px 15px 20px
 			align-items: center
 		.popup-left
 			position: relative
@@ -47,3 +60,8 @@
 			position: absolute
 			top: -20px
 			right: -20px
+			+r(991)
+				top: auto
+				right: auto
+				position: static
+				margin: auto
