@@ -1,5 +1,36 @@
-<section class="popup">
-	<div class="container">
-
+<div class="ever-popup-build">
+	<div class="popup" id="cloneThis">
+		<div class="popup__wrap">
+			<div class="popup-left">
+				<div class="header-mop">
+					<img src="img/mop.png" alt="mop">
+				</div>
+			</div>
+			<div class="form">
+				<div class="form-title">Дешевле,<br>
+					чем в магазине!</div>
+				<div class="price">
+					<div class="old-price">
+						<div class="old-price-title">Старая цена</div>
+						<div class="old-price-count"><span class="x_price_previous">900</span> <span
+								class="x_currency">руб</span></div>
+					</div>
+					<div class="new-price">
+						<div class="new-price-title">А теперь цена</div>
+						<div class="new-price-count"><span class="x_price_current">800</span> <span
+								class="x_currency">руб</span></div>
+					</div>
+				</div>
+				<form action="/submit" method="post" class="x_order_form form__cont">
+					<div class="form__input-name"><input type="text" name="name" placeholder="Мое имя" required=""
+							autocomplete="name" class="form__input"></div>
+					<div class="form__input-phone"><input type="tel" name="phone" placeholder="Мой телефон" required=""
+							autocomplete="tel" class="form__input"></div>
+					<button type="submit" class="btn">Заказать <span class="form__btn_size">со
+							скидкой<span></span></span></button>
+				</form>
+				<div class="protection">Ваши данные защищены!</div>
+			</div>
+		</div>
 	</div>
-</section>
+</div>

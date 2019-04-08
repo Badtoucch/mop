@@ -1,0 +1,67 @@
+//popup style
+.ever-popup
+	background: rgba(255, 255, 255, 0.8) !important
+	&__close
+		display: none !important
+		+r(991)
+			display: block !important
+			right: 10px !important
+			top: 10px !important
+			&::after, &::before
+				background: #ef5b4d !important
+				height: 3px !important
+				width: 23px !important
+				top: 50% !important
+				transform-origin: 0 100% !important
+			&::after
+				transform: rotate(-45deg) translate(-50%, 50%) !important
+			&::before
+				transform: rotate(45deg) translate(-50%, 50%) !important
+	&__inner
+		padding-top: 0 !important
+	&__body
+.popup
+	border-radius: 4px
+	background-color: white
+	width: 750px
+	height: 497px
+	+r(991)
+		width: auto
+		height: auto
+		border-radius: 30px
+	&__wrap
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+		height: 100%
+		+r(991)
+			align-items: center
+		.popup-left
+			position: relative
+			display: flex
+			flex-direction: column
+			padding-top: 50px
+			padding-bottom: 30px
+			overflow: hidden
+			width: 100%
+			height: 100%
+			+r(991)
+				display: none
+			.header-mop
+				width: 392px
+				height: 392px
+				background-size: cover
+				box-shadow: 0 12px 46px rgba(222, 229, 234, 0.75)
+				bottom: 31px
+				left: 39px
+				img
+					width: 312px
+		.form
+			position: absolute
+			top: -20px
+			right: -20px
+			+r(991)
+				top: auto
+				right: auto
+				position: static
+				margin: auto

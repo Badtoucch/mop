@@ -145,8 +145,27 @@
 				max-width: 390px
 				width: 100%
 				padding-right: 40px
+				&:after
+					content: ''
+					display: block
+					position: absolute
+					right: 2px
+					top: 0
+					bottom: 0
+					width: 11px
+					height: 100%
+					background-size: 13px 11px
+					background-repeat: repeat-y
+					background-image: radial-gradient(#f57373 28%,transparent 0)
+					+r(767)
+						right: 7px
+						top: 3px
+					+r(639)
+						display: none
 				+r(1189)
 					max-width: 338px
+				+r(1023)
+					max-width: 50%
 				+r(639)
 					max-width: 100%
 					padding-right: 0
@@ -165,20 +184,6 @@
 						background-size: 13px 11px
 						background-repeat: repeat-x
 						background-image: radial-gradient(#f57373 28%,transparent 0)
-				&:after
-					content: ''
-					display: block
-					position: absolute
-					right: 2px
-					top: 0
-					bottom: 0
-					width: 11px
-					height: 100%
-					background-size: 13px 11px
-					background-repeat: repeat-y
-					background-image: radial-gradient(#f57373 28%,transparent 0)
-					+r(1023)
-						display: none
 			&:nth-of-type(2)
 				max-width: 470px
 				width: 100%
