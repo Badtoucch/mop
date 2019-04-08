@@ -28,6 +28,9 @@
 		+r(1023)
 			text-align: center
 			padding-bottom: 18px
+		+r(479)
+			br
+				display: none
 		&::after
 			content: ''
 			display: block
@@ -53,6 +56,11 @@
 			font-size: 21px
 			line-height: 26px
 			margin-bottom: 18px
+		+r(479)
+			font-size: 20px
+			line-height: 22px
+			br
+				display: none
 	&__ttl
 		color: #3c3f52
 		font-size: 36px
@@ -63,6 +71,10 @@
 			font-size: 28px
 		+r(1023)
 			text-align: center
+		+r(639)
+			font-size: 22px
+			margin-bottom: 20px
+			line-height: 20px
 	&__list
 		display: flex
 		counter-reset: section
@@ -74,6 +86,8 @@
 			justify-content: center
 		+r(639)
 			flex-wrap: wrap
+			justify-content: space-around
+			margin-bottom: 30px
 		.item
 			flex-shrink: 0
 			position: relative
@@ -88,6 +102,11 @@
 					margin-right: 50px
 				+r(767)
 					margin-right: 40px
+				+r(639)
+					margin-right: 0
+					margin-bottom: 25px
+				+r(479)
+					margin-bottom: 0
 				&:nth-of-type(odd)
 					&::after
 						content: ''
@@ -118,6 +137,11 @@
 					&:nth-of-type(odd), &:nth-of-type(even)
 						&::after
 							display: none
+			+r(479)
+				width: 45%
+				text-align: center
+				&:nth-of-type(-n+2)
+						margin-bottom: 25px
 			&::before
 				counter-increment: section
 				content: counter(section)
@@ -150,8 +174,11 @@
 			+r(767)
 				font-size: 19px
 			+r(639)
+				padding-left: 40px
 				br
 					display: none
+			+r(479)
+				font-size: 18px
 			b
 				color: #3c3f52
 				font-weight: 700
