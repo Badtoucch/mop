@@ -200,7 +200,9 @@
 			line-height: 1;
 			cursor: pointer;
 			transition: all .4s ease-in-out;
-
+			&:hover{
+				box-shadow: none;
+			}
 		}
 	}
 
@@ -328,7 +330,6 @@
 		padding: 12px 40px;
 		margin: 10px auto;
 		border-radius: 30px;
-		-webkit-box-shadow: 0 8px 13px rgba(226,147,103,.23);
     box-shadow: 0 8px 13px rgba(226,147,103,.23);
     border-radius: 30px;
     background-color: #f57f4d;
@@ -340,8 +341,7 @@
 		transition: .5s;
 
 		&:hover {
-			box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
-			background-position: 0 0;
+			box-shadow: none;
 		}
 	}
 

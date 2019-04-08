@@ -243,7 +243,10 @@ height: 129px;
   background-color: #f4f7f9;
   box-shadow: inset 2px 3px 5px rgba(34, 35, 39, 0.09);
   transition: all 0.3s;
-  padding: 0 30px 0 57px;
+	padding: 0 30px 0 57px;
+	&:focus, &:hover{
+		box-shadow: inset 2px 3px 5px rgba(34, 35, 39, 0.3);
+	}
 }
 .form__input-phone {
   position: relative;
@@ -296,6 +299,16 @@ line-height: 22px;
 color: #fff;
 cursor: pointer;
 position: relative;
+transition: 0.2s;
+&:hover{
+	box-shadow: none;
+	transition: 0.2s;
+	&:before{
+	
+		opacity: 0.7;
+		transition: 0.8s;
+	}
+}
 &:before{
 	content: '';
 	position: absolute;
@@ -307,6 +320,8 @@ height: 72px;
 border: 1px solid #f5814d;
 opacity: 0.3;
 border-radius: 40px;
+transition: 0.5s;
+
 }
 }
 .form__btn_size{
