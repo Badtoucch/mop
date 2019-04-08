@@ -1,0 +1,49 @@
+//popup style
+.ever-popup
+	background: rgba(255, 255, 255, 0.8) !important
+	&__close
+		display: none !important
+	&__inner
+		padding-top: 0 !important
+	&__body
+.popup
+	border-radius: 4px
+	background-color: white
+	width: 750px
+	height: 497px
+	+r(991)
+		width: 300px !important
+		height: 640px
+	&__wrap
+		// padding: 0 48px
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+		height: 100%
+		+r(991)
+			padding: 70px 15px 20px
+			align-items: center
+		.popup-left
+			position: relative
+			display: flex
+			flex-direction: column
+			padding-top: 50px
+			padding-bottom: 30px
+			overflow: hidden
+			width: 100%
+			height: 100%
+			+r(991)
+				display: none
+			.header-mop
+				width: 392px
+				height: 392px
+				background-size: cover
+				box-shadow: 0 12px 46px rgba(222, 229, 234, 0.75)
+				bottom: 31px
+				left: 39px
+				img
+					width: 312px
+		.form
+			position: absolute
+			top: -20px
+			right: -20px
