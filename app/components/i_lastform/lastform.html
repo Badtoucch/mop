@@ -1,43 +1,95 @@
-<section class="lastform">
+<section class="lastform block" id="lastform">
 	<div class="container">
 		<div class="arrow arrow--white">
-			<a href="#technology">
-				<svg class="arrow__svg" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-			 viewBox="0 0 30 17" style="enable-background:new 0 0 30 17;" xml:space="preserve">
-		<style type="text/css">
-			.bottom__arrow {
-				fill: #FFFFFF;
-			}
-		</style>
-		<g>
-			<g transform="translate(-1266 -372)">
-				<g>
-					<path class="bottom__arrow" d="M1295.4,372.6c-0.4-0.4-0.8-0.6-1.3-0.6h-26.2c-0.5,0-0.9,0.2-1.3,0.6c-0.4,0.3-0.6,0.8-0.6,1.3
+			<a href="#lastform">
+				<svg class="arrow__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 30 17"
+					style="enable-background:new 0 0 30 17;" xml:space="preserve">
+					<style type="text/css">
+						.bottom__arrow {
+							fill: #FFFFFF;
+						}
+					</style>
+					<g>
+						<g transform="translate(-1266 -372)">
+							<g>
+								<path class="bottom__arrow" d="M1295.4,372.6c-0.4-0.4-0.8-0.6-1.3-0.6h-26.2c-0.5,0-0.9,0.2-1.3,0.6c-0.4,0.3-0.6,0.8-0.6,1.3
 						c0,0.5,0.2,1,0.6,1.3l13.1,13.2c0.4,0.4,0.8,0.6,1.3,0.6c0.5,0,0.9-0.2,1.3-0.6l13.1-13.2c0.4-0.4,0.6-0.8,0.6-1.3
-						C1296,373.4,1295.8,372.9,1295.4,372.6L1295.4,372.6z"/>
-				</g>
-			</g>
-		</g>
-		</svg>
+						C1296,373.4,1295.8,372.9,1295.4,372.6L1295.4,372.6z" />
+							</g>
+						</g>
+					</g>
+				</svg>
 			</a>
 
-        <svg class="el__svg" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-			 viewBox="0 0 368 40" style="enable-background:new 0 0 368 40;" xml:space="preserve">
-		<style type="text/css">
-			.bottom__el {
-                fill: #eef3f6;
-            }
-		</style>
-		<g>
-			<g transform="translate(-1096 -372)">
+			<svg class="el__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 368 40"
+				style="enable-background:new 0 0 368 40;" xml:space="preserve">
+				<style type="text/css">
+					.bottom__el {
+						fill: #eef3f6;
+					}
+				</style>
 				<g>
-					<path class="bottom__el" d="M0,372h1465c-61.6,0-123.8,40-186,40c-61.5,0-123-40-184-40H0z"/>
+					<g transform="translate(-1096 -372)">
+						<g>
+							<path class="bottom__el" d="M0,372h1465c-61.6,0-123.8,40-186,40c-61.5,0-123-40-184-40H0z" />
+						</g>
+					</g>
 				</g>
-			</g>
-		</g>
-		</svg>
-
-
-        </div>
+			</svg>
+		</div>
+		<div class="header-content">
+				<div class="header-left">
+					<h1 class="header-title">Мыть полы — приятная игра!</h1>
+					<div class="header-subtitle">С <span class="lime text-nowrap">Умной шваброй</span><br>
+						мыть полы так просто,<br>
+						что это нравится всем,<br>
+						даже детям</div>
+					<ul class="header-list">
+						<li class="header-list__item">
+							Просто<br>
+							до неправдоподобия:
+							<span>насадка впитывает всю<br>
+								жидкость и собирает всю грязь</span>
+						</li>
+						<li class="header-list__item">Так быстро,
+							<span>что вы не заметите процесс,<br>
+								но заметите результат</span></li>
+						<li class="header-list__item">Идеально чисто:
+							<span>полы блестят, нет грязи в углах<br>
+								и под диванами</span></li>
+					</ul>
+				</div>
+				<div class="header-center">
+					<div class="header-mop"><img src="img/mop.png" alt="mop"></div>
+				</div>
+				<div class="header-right">
+					<div class="form">
+						<div class="form-title">Дешевле,<br>
+							чем в магазине!</div>
+							<div class="price">
+								<div class="old-price">
+									<div class="old-price-title">Старая цена</div>
+									<div class="old-price-count"><span class="x_price_previous">900</span> <span class="x_currency">руб</span></div>
+								</div>
+								<div class="new-price">
+									<div class="new-price-title">А теперь цена</div>
+									<div class="new-price-count"><span class="x_price_current">800</span> <span class="x_currency">руб</span></div>
+								</div>
+							</div>
+							<form action="/submit" method="post" class="x_order_form form__cont">
+								<div class="form__input-name"><input type="text" name="name" placeholder="Мое имя" required="" autocomplete="name" class="form__input"></div>
+								<div class="form__input-phone"><input type="tel" name="phone" placeholder="Мой телефон" required="" autocomplete="tel" class="form__input"></div>
+								<button type="submit" class="btn">Заказать <span class="form__btn_size">со
+										скидкой<span></span></span></button>
+							</form>
+							<div class="protection">Ваши данные защищены!</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-circle"></div>
+			<span class="circle-1"></span>
+			<span class="circle-2"></span>
+			<span class="circle-3"></span>
+			<span class="circle-4"></span>
 	</div>
 </section>

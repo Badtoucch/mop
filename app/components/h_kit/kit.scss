@@ -169,7 +169,7 @@ z-index: -1;
 @include r(1189){
 	.kit{
 		padding-top: 70px;
-		padding-bottom: 60px;
+		padding-bottom: 95px;
 	}
 	.kit-title{
 		padding-bottom: 20px;
@@ -201,6 +201,9 @@ z-index: -1;
 		}
 }
 @include r(1023){
+	.kit{
+		padding-bottom: 90px;
+	}
 	.kit-left{
 		width: 100%;
 		display: flex;
@@ -240,6 +243,9 @@ z-index: -1;
 }
 }
 @include r(767){
+	.kit{
+		padding-bottom: 90px;
+	}
 	.kit-title {
     padding-bottom: 15px;
 }

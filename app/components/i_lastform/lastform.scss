@@ -1,0 +1,33 @@
+.lastform{
+	position: relative;
+		background: url(../img/bg1.jpg) center no-repeat #f1f5f7;
+		padding-top: 65px;
+		padding-bottom: 85px;
+		z-index: 1;
+		&:before{
+			content: '';
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			transform: translate(-50%);
+			height: 60px;
+			width: 2703px;
+			background: url(../img/last-form-line.png) center no-repeat ;
+		}
+		.arrow{
+			z-index: 5;
+		}
+		.header-mop img{
+			transform: translate(-48%,-69%);
+		}
+}
+@include r(1023){
+	.lastform{
+		&:before{
+			display: none;
+		}
+	}
+	.lastform .header-mop img{
+		transform: none;
+	}
+}
