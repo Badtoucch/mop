@@ -1,8 +1,18 @@
 .kit {
-	padding-top: 108px;
-	padding-bottom: 116px;
-position: relative;
-z-index: 1;
+	padding-top: 58px;
+	padding-bottom: 97px;
+	position: relative;
+	&:after{
+		content: "";
+		position: absolute;
+		left: 50%;
+		bottom: -50px;
+		transform: translateX(-50%);
+		height: 52px;
+		width: 100%;
+		background: url(../img/line-3.png) no-repeat center;
+		z-index: 2;
+	}
 	&-title {
 		text-align: left;
 		position: relative;
@@ -87,6 +97,7 @@ background-color: #f4f7f9;
 border-radius: 50%;
 position: relative;
 left: 200px;
+top: -20px;
 .kit-right__img{
 	position: relative;
 	img{
@@ -103,7 +114,8 @@ left: 200px;
 height: 160px;
 background-color: #f4f7f9;
 border-radius: 50%;
-margin-top: 45px;
+top: 39px;
+left: 14px;
 }
 .kit-box3{
 	width: 260px;
@@ -140,7 +152,7 @@ border-radius: 50%;
 }
 .kit-box3{
 	position: absolute;
-	bottom: 0;
+	bottom: 20px;
 	right: -20px;
 	.kit-right__img{
 		img{
@@ -203,6 +215,9 @@ z-index: -1;
 @include r(1023){
 	.kit{
 		padding-bottom: 90px;
+		&::after{
+			display: none;
+		}
 	}
 	.kit-left{
 		width: 100%;
@@ -273,7 +288,7 @@ z-index: -1;
     font-size: 16px;
 }
 .kit-box1{
-	left: 133px;
+	left: 103px;
 }
 .kit-box3 {
 	right: 65px;
@@ -281,15 +296,36 @@ z-index: -1;
 }
 }
 @include r(639){
+	.kit-right{
+		margin-top: 0;
+		text-align: center;
+		margin: auto;
+	}
+	.kit-box1{
+		top: 0;
+		left: 0;
+		right: auto;
+	}
+	.kit-box2{
+		top: -50px;
+		right: -241px;
+		left: auto;
+	}
+	.kit-box3 {
+		position: relative;
+		margin: auto;
+		left: auto;
+		right: auto;
+		top: auto;
+		bottom: 0;
+	}
 	.kit-curve__title, .kit-equipment__title {
     text-align: center;
     font-size: 21px;
 }
-.kit-right{
-	display: none;
-}
 .kit-left{
 	flex-wrap: wrap;
+	margin-bottom: 20px;
 }
 .kit-equipment__name{
 	display: block;
@@ -306,4 +342,32 @@ z-index: -1;
 	margin-top: 10px;
 
 }
+}
+@include r(479){
+	.kit-right{
+		margin-top: 0;
+		width: 300px;
+		text-align: center;
+		margin: auto;
+	}
+	.kit-box1{
+		position: relative;
+		margin: auto;
+		left: auto;
+		right: auto;
+		top: auto;
+		margin-bottom: 25px;
+	}
+	.kit-box2{
+		position: relative;
+		margin: auto;
+		left: auto;
+		right: auto;
+		top: auto;
+		margin-bottom: 15px;
+	}
+	.kit-box3 .kit-right__text{
+		right: -10px;
+		bottom: 40px;
+	}
 }

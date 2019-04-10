@@ -1,9 +1,19 @@
 .delivery {
 	padding-top: 120px;
-	padding-bottom: 120px;
+	padding-bottom: 157px;
 	background-color: #eef3f6;
 	position: relative;
-
+	&:after{
+		content: "";
+		position: absolute;
+		left: 50%;
+		bottom: 0px;
+		transform: translateX(-50%);
+		height: 43px;
+		width: 100%;
+		background: url(../img/line-2.png) no-repeat center;
+		z-index: 2;
+	}
 	&-first {
 		display: flex;
 		justify-content: space-between;
@@ -95,8 +105,9 @@
 			height: 58px;
 
 			border-radius: 50%;
-			background: url(../img/icon-check.svg) 50% 68%;
+			background: url(../img/icon-check.svg) center 7px;
 			background-color: #ffffff;
+			background-size: contain;
 		}
 
 		&__text {
@@ -178,7 +189,7 @@
 
 @include r(1189) {
 	.delivery {
-		padding: 70px 0 60px;
+		padding: 95px 0 100px;
 	}
 
 	.del-box-line:after {
@@ -226,6 +237,11 @@
 }
 }
 @include r(1023){
+	.delivery{
+		&:after{
+			display: none;
+		}
+	}
 	.delivery-circle1,.delivery-circle2{
 		display: none;
 	}

@@ -1,5 +1,5 @@
 .check {
-	padding-top: 140px;
+	padding-top: 115px;
 	padding-bottom: 30px;
 	position: relative;
 	&:before{
@@ -62,7 +62,7 @@ margin-top: 13px;
 			line-height: 24px;
 
 			&:not(:last-child) {
-				margin-bottom: 34px;
+				margin-bottom: 37px;
 			}
 
 			&:after {
@@ -213,7 +213,9 @@ height: 440px;
     top: -3px;
 }
 .check:before {
-	bottom: 14px;
+	bottom: 0px;
+	right: 100px;
+	left: auto;
 	transform: translateX(66%);
 	width: 83px;
 	background-size: contain;

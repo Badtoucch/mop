@@ -1,7 +1,22 @@
 .ancient
-	padding-top: 98px
+	padding-top: 53px
 	padding-bottom: 107px
-	background: url('../img/bg-ancient.png') no-repeat calc(50% - +398px) 106px
+	background: url('../img/bg-ancient.png') no-repeat calc(50% - +406px) 56px 
+	position: relative
+	+r(1189)
+		padding-bottom: 70px
+	&:after
+		content: ""
+		position: absolute
+		left: 50%
+		bottom: -50px
+		transform: translateX(-50%)
+		height: 52px
+		width: 100%
+		background: url(../img/line-3.png) no-repeat center
+		z-index: 2
+		+r(1023)
+			display: none
 	.color-green
 		color: #a0d344
 	.arrow
@@ -13,7 +28,7 @@
 	&__left
 		flex-shrink: 0
 		margin-top: 190px
-		margin-left: -100px
+		margin-left: -107px
 		margin-right: 69px
 		+r(1189)
 			margin-right: 40px

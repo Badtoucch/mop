@@ -2,9 +2,20 @@
 .ever-popup
 	background: rgba(255, 255, 255, 0.8) !important
 	&__close
-		display: none !important
+		display: block !important
+		right: -32px !important
+		top: -62px !important
+		&::after, &::before
+			background: #ef5b4d !important
+			height: 3px !important
+			width: 33px !important
+			top: 50% !important
+			transform-origin: 0 100% !important
+		&::after
+			transform: rotate(-45deg) translate(-50%, 50%) !important
+		&::before
+			transform: rotate(45deg) translate(-50%, 50%) !important
 		+r(991)
-			display: block !important
 			right: 10px !important
 			top: 10px !important
 			&::after, &::before
@@ -13,10 +24,6 @@
 				width: 23px !important
 				top: 50% !important
 				transform-origin: 0 100% !important
-			&::after
-				transform: rotate(-45deg) translate(-50%, 50%) !important
-			&::before
-				transform: rotate(45deg) translate(-50%, 50%) !important
 	&__inner
 		padding-top: 0 !important
 	&__body
@@ -25,6 +32,7 @@
 	background-color: white
 	width: 750px
 	height: 497px
+	box-shadow: 0 8px 57px rgba(178, 182, 200, 0.35)
 	+r(991)
 		width: auto
 		height: auto
@@ -55,7 +63,8 @@
 				bottom: 31px
 				left: 39px
 				img
-					width: 312px
+					width: 254px
+					top: 70%
 		.form
 			position: absolute
 			top: -20px

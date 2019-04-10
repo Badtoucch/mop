@@ -1,15 +1,11 @@
 $mainColor: #000
 $lime: #a0d344
 
-html
-  font-family: sans-serif
-  -ms-text-size-adjust: 100%
-  -webkit-text-size-adjust: 100%
-  overflow-x: hidden
 body
   margin: 0
+  padding: 0
   overflow-x: hidden
-
+html
 *
   outline: none
 
@@ -24,8 +20,6 @@ audio:not([controls])
   display: none
   height: 0
 
-[hidden], template
-  display: none
 
 a
   background-color: transparent
@@ -42,37 +36,10 @@ b, strong
 dfn
   font-style: italic
 
-h1
-  font-size: 2em
-  margin: 0.67em 0
-
-mark
-  background: #ff0
-  color: #000
-
-small
-  font-size: 80%
-
-sub
-  font-size: 75%
-  line-height: 0
-  position: relative
-  vertical-align: baseline
-
-sup
-  font-size: 75%
-  line-height: 0
-  position: relative
-  vertical-align: baseline
-  top: -0.5em
-
-sub
-  bottom: -0.25em
-
 img
   border: 0
 
-svg:not(:root)
+svg
   overflow: hidden
 
 figure
@@ -85,10 +52,6 @@ hr
 
 pre
   overflow: auto
-
-code, kbd, pre, samp
-  font-family: monospace, monospace
-  font-size: 1em
 
 button, input, optgroup, select, textarea
   color: inherit
@@ -137,53 +100,12 @@ input
     &::-webkit-search-cancel-button, &::-webkit-search-decoration
       -webkit-appearance: none
 
-fieldset
-  border: 1px solid silver
-  margin: 0 2px
-  padding: 0.35em 0.625em 0.75em
-
-legend
-  border: 0
-  padding: 0
-
-textarea
-  overflow: auto
-
-optgroup
-  font-weight: 700
-
-table
-  border-collapse: collapse
-  border-spacing: 0
-
-td, th
-  padding: 0
-
 *
   box-sizing: border-box
 
-html
-  padding: 0
-  margin: 0
-  width: 100%
-  font-family: Roboto, sans-serif
-  background-color: #fff
-  color: #000
-  font-size: 16px
-  line-height: normal
-  box-sizing: border-box
 
 body
-  padding: 0
-  margin: 0
-  width: 100%
   font-family: Roboto, sans-serif
-  background-color: #fff
-  color: #000
-  font-size: 16px
-  line-height: normal
-  box-sizing: border-box
-  overflow-x: hidden
 
 h1, h2, h3, h4, h5, h6, p
   margin: 0
@@ -314,3 +236,5 @@ section
 .text-nowrap
 	white-space: nowrap
 
+_:-ms-fullscreen, :root .gives .left__row:nth-of-type(2) .item::before
+  top: 21px
